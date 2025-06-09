@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>Coming Soon</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html, body {
+        height: 100%;
+        background: linear-gradient(135deg, #ff7e5f, #feb47b);
+        font-family: 'Poppins', sans-serif;
+        color: #222;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container {
+        background: rgba(255,255,255,0.92);
+        border-radius: 24px;
+        box-shadow: 0 8px 32px 0 rgba(255,126,95,0.25), 0 1.5px 8px 0 rgba(0,0,0,0.10);
+        text-align: center;
+        padding: 48px 32px 36px 32px;
+        max-width: 420px;
+        min-width: 320px;
+        width: 100%;
+        min-height: 220px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h1 {
+        font-size: 2.8rem;
+        font-weight: 900;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: #ff7e5f;
+        margin-bottom: 18px;
+        animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+        0%, 100% {
+            text-shadow:
+                0 0 10px #ffb574cc,
+                0 0 20px #ff7e5fcc;
+            color: #ff7e5f;
+        }
+        50% {
+            text-shadow:
+                0 0 20px #feb47b,
+                0 0 40px #ffb574;
+            color: #feb47b;
+        }
+    }
+    p {
+        font-size: 1.1rem;
+        font-weight: 400;
+        color: #444;
+        margin-top: 0;
+    }
+    @media (max-width: 480px) {
+        .container {
+            padding: 32px 12px 24px 12px;
+            min-width: unset;
+            max-width: 98vw;
+        }
+        h1 {
+            font-size: 2rem;
+            letter-spacing: 0.1em;
+        }
+        p {
+            font-size: 1rem;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="container" role="main" aria-label="Coming Soon Message">
+        <h1>Coming Soon</h1>
+        <p>We're working hard to bring something amazing. Stay tuned!</p>
+    </div>
+</body>
+</html>
